@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleNails</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="https://i.postimg.cc/vTtjwtt3/11zon-cropped.png" alt="Logo">
+            <span>SimpleNails</span>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#">Orders</a></li>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log In</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="title-container">
+        <div class="title"><span>SimpleNails</span></div>
+        <div class="subtitle"><span>Simply Stylish, Simply You</span></div>
+
+        <div class="container">
+            <a href="#about" class="box">About Us</a>
+            <a href="#quick-start" class="box" id="quickStartLink">Quick Start</a>
+          </div>
+
+            <!-- Quick Start Page -->
+            <div class="quick-start-page" id="quickStartPage">
+                <div class="quick-start-content">
+                    <button class="close-btn">Close</button>
+                    <div class="request-form">
+                        <h5>Photo Editing Request</h5>
+                        <form id="editingRequestForm" action="https://formspree.io/f/xkgjzdjo" method="POST" enctype="multipart/form-data">
+                            <!-- Step 1 -->
+                            <div class="form-step">
+                                <div class="step-indicator">1</div>
+                                <h3>Project Details</h3>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label><i class="fas fa-user"></i> Your Name</label>
+                                        <input type="text" name="name" placeholder="Alex" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label><i class="fas fa-envelope"></i> Email</label>
+                                        <input type="email" name="email" placeholder="alex@example.com" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label><i class="fas fa-palette"></i> Service Type</label>
+                                        <select name="service_type" required>
+                                            <option value="">Select Service</option>
+                                            <option>Thumbnail Design</option>
+                                            <option>Photo Retouching</option>
+                                            <option>Background Removal</option>
+                                            <option>Color Correction</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Step 2 -->
+                            <div class="form-step">
+                                <div class="step-indicator">2</div>
+                                <h3>Upload Files</h3>
+                                <div class="upload-section">
+                                    <div class="drag-drop-area" id="dropZone">
+                                        <i class="fas fa-cloud-upload-alt"></i>
+                                        <p>Drag & Drop Files Here</p>
+                                        <span>or</span>
+                                        <label class="browse-btn">Browse Files
+                                            <input type="file" name="files[]" hidden multiple>
+                                        </label>
+                                        <p class="file-types">Supported formats: JPG, PNG, PSD (Max 25MB)</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Step 3 -->
+                            <div class="form-step">
+                                <div class="step-indicator">3</div>
+                                <h3>Editing Preferences</h3>
+                                <div class="form-grid2">
+                                    <div class="form-group">
+                                        <label><i class="fas fa-comment-alt"></i> Special Instructions</label>
+                                        <textarea name="instructions" rows="4" placeholder="Describe your requirements..."></textarea>
+                                    </div>
+                                    <div class="style-selection">
+                                        <label>Preferred Style</label>
+                                        <div class="style-options">
+                                            <div class="style-option">
+                                                <div class="style-preview vintage"></div>
+                                                <span>Vintage</span>
+                                            </div>
+                                            <div class="style-option">
+                                                <div class="style-preview modern"></div>
+                                                <span>Modern</span>
+                                            </div>
+                                            <div class="style-option">
+                                                <div class="style-preview minimalist"></div>
+                                                <span>Minimalist</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Submit Request
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        <h2>Creating Stunning Thumbnails & Posters Using Industry Leading Tools</h2>
+        <div class="logo-container">
+            <div class="tool-wrapper">
+                <img src="https://freepnglogo.com/images/all_img/1691829322canva-app-logo-png.png" alt="Canva Logo" class="tool-logo">
+                <span class="tool-name">Canva</span>
+            </div>
+            <div class="tool-wrapper">
+                <img src="https://cdnblog.picsart.com/2021/07/icon-square-780x780.jpg" alt="PicsArt Logo" class="tool-logo">
+                <span class="tool-name">PicsArt</span>
+            </div>
+            <div class="tool-wrapper">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Photoshop Logo" class="tool-logo">
+                <span class="tool-name">Photoshop</span>
+            </div>
+            <div class="tool-wrapper">
+                <img src="https://th.bing.com/th/id/R.70179fd36e50cabed4c0f13d6a84de51?rik=xdMwIaj9pABHJw&riu=http%3a%2f%2fstore-images.s-microsoft.com%2fimage%2fapps.10618.13613233696226094.3a9dfe25-d6e8-4000-b5b1-ea1e1a035847.2afd8a16-ac53-4506-b1a9-3bdefa2ed15e&ehk=ECkdrVfoEPFd4S7Xw2bPTpYmQeVH0ecMI7cjjFM5jXk%3d" alt="Pixlr Logo" class="tool-logo">
+                <span class="tool-name">Pixlr</span>
+            </div>
+            <div class="tool-wrapper">
+                <img src="https://th.bing.com/th/id/R.500d81114bf86ce02d3ac5680a805b59?rik=aD74PLlakiDGbA&riu=http%3a%2f%2ffreelogopng.com%2fimages%2fall_img%2f1681985517lightroom-logo-png.png&ehk=vx15kbqUZrXfdadGM8vjNArTudLQUkuCzGMBr2yinso%3d&risl=&pid=ImgRaw&r=0" class="tool-logo">
+                <span class="tool-name">Lightroom</span>
+            </div>
+            <div class="tool-wrapper">
+                <img src="https://cdn.shopper.com/images/store-logos/fotor-com-1554755087375.png" alt="Fotor Logo" class="tool-logo">
+                <span class="tool-name">Fotor</span>
+            </div>
+            <div class="tool-wrapper">
+                <img src="https://yt3.ggpht.com/-7zDluQ-mzJg/AAAAAAAAAAI/AAAAAAAAAAA/DTo9zvmCOOE/s900-c-k-no/photo.jpg" alt="PaintShop Pro Logo" class="tool-logo">
+                <span class="tool-name">PaintShop</span>
+            </div>
+        </div>
+        
+          <div class="container-box">
+            <div class="content-box"> Create professional posters, attractive thumbnails, and seamless image edits with our user-friendly, feature-packed editing platform.</div>
+            <div class="content-box">Get unique, high-quality thumbnails designed fast at budget-friendly rates, perfect for freelancers seeking impactful online branding.</div>
+            <div class="content-box">Design striking posters, engaging thumbnails, and polished images with our easy-to-use editing tools for all creative projects.</div>
+            <div class="content-box">Transform your visuals with custom posters, standout thumbnails, and precise image edits using our versatile, easy-to-navigate editing platform.</div>
+        </div>
+
+        <div class="container2">
+            <div class="subtitle2"><span>Design</span></div>
+            <div class="subtitle3"><span>Samples</span></div>
+        </div>
+
+          <div class="image-container">
+            <img src="https://indiater.com/wp-content/uploads/2021/06/free-fortnite-game-thumbnail-banner-design-psd-template.jpg" alt="Image 1" class="red" >
+            <img src="https://miro.medium.com/v2/resize:fit:1200/1*60RQyL8WeifCvfJX8dQCcQ.jpeg" alt="Image 2" class="blue">
+            <img src="https://i.ytimg.com/vi/CgCHKBd-Koc/maxresdefault.jpg" alt="Image 3" class="orange">
+            <img src="https://static-cse.canva.com/blob/1318612/1600w-wK95f3XNRaM.jpg" alt="Image 4" class="pink">
+            <img src="https://i.postimg.cc/tgBH1q35/Purple-Simple-Gaming-Stream-You-Tube-Thumbnail-2.png" alt="Image 5" class="yellow">
+            <img src="https://1.bp.blogspot.com/-aLbT5rdO2rU/Xr7hLoklUgI/AAAAAAAADa0/jDdbvtWju40BqAd2qwF6vJ4Tp9NmyG2tQCLcBGAsYHQ/s1600/01.jpg" alt="Image 6" class="green">
+            <img src="https://i.postimg.cc/rpQ8CrtW/CUSTOM.png" alt="Image 6" class="red">
+            <img src="https://i.postimg.cc/NjvfgYcy/FREE-FIRE.png" alt="Image 6" class="blue">
+            <img src="https://i.postimg.cc/LX5my8zW/ON.png" alt="Image 6" class="orange">
+            <img src="https://i.postimg.cc/7LxH2Vbw/ONE-TAP.png" alt="Image 6" class="pink">
+            <img src="https://i.postimg.cc/t4dRJfqB/ONLY-HEADSHOT.png" alt="Image 6" class="yellow">
+            <img src="https://i.postimg.cc/1tdsb1B3/SID-FF.png" alt="Image 6" class="green">
+        </div>
+
+<section class="about-section" id="about">
+    <div class="about-container">
+        <div class="about-title">
+            <h2>About SimpleNails</h2>
+            <div class="title-gradient">Where Creativity Meets Precision</div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-card mission-card">
+                <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+                <h3>Our Mission</h3>
+                <p>At SimpleNails, we empower content creators and businesses with stunning visual designs that captivate audiences. Since 2020, we've delivered over 15,000 custom designs, helping clients boost their engagement by an average of 200%.</p>
+            </div>
+
+            <div class="about-card values-card">
+                <div class="card-icon"><i class="fas fa-heart"></i></div>
+                <h3>Core Values</h3>
+                <ul class="values-list">
+                    <li><i class="fas fa-check"></i> Pixel-Perfect Precision</li>
+                    <li><i class="fas fa-check"></i> Lightning-Fast Delivery</li>
+                    <li><i class="fas fa-check"></i> Unlimited Revisions</li>
+                    <li><i class="fas fa-check"></i> 24/7 Creative Support</li>
+                </ul>
+            </div>
+
+            <div class="team-section">
+                <h3>Meet Our Creative Team</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://media.istockphoto.com/photos/male-silhouette-profile-picture-with-question-mark-picture-id518552551?k=6&m=518552551&s=612x612&w=0&h=9rYn6zWIkqPysH2Ypag-fxWIxCmwPTQSe7WdevYlwRs=" alt="Lead Designer">
+                        <h4>Apply For Position</h4>
+                        <p>Lead Designer</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://media.istockphoto.com/photos/male-silhouette-profile-picture-with-question-mark-picture-id518552551?k=6&m=518552551&s=612x612&w=0&h=9rYn6zWIkqPysH2Ypag-fxWIxCmwPTQSe7WdevYlwRs=" alt="Photo Editor">
+                        <h4>Apply For Position</h4>
+                        <p>Photo Editor</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <div class="stat-number">500K+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">15M+</div>
+                    <div class="stat-label">Views Generated</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <footer class="footer-section">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <p>Email: support@example.com</p>
+                    <p>Phone: +123-456-7890</p>
+                    <p>Address: 123 Street, City, Country</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Follow Us</h4>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href=" https://www.instagram.com/.sunil._sharma?igsh=YzljYTk1ODg3Zg==">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/sunil-sharma-1773a7344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SimpleNails. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>    
